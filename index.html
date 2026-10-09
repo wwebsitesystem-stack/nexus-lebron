@@ -6,76 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lebron James</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
         
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f2f2f2;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header Styles */
         .header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
         
         .header h1 {
             font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
         
+        /* Content Styles */
         .content {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         .content h2 {
             font-size: 24px;
             margin-bottom: 10px;
+            color: #333;
         }
         
         .content p {
             font-size: 18px;
             margin-bottom: 20px;
+            color: #666;
         }
         
         .image {
             width: 100%;
-            height: 200px;
+            height: 300px;
             object-fit: cover;
             margin-bottom: 20px;
+            border-radius: 10px;
         }
         
+        /* Footer Styles */
         .footer {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
             clear: both;
+            position: relative;
+            z-index: 1;
         }
         
         .footer p {
             margin-bottom: 10px;
+            color: #999;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .content {
+                margin: 20px auto;
+                padding: 10px;
+            }
+            
+            .image {
+                height: 200px;
+            }
+            
+            .footer {
+                padding: 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .content {
+                margin: 10px auto;
+                padding: 5px;
+            }
+            
+            .image {
+                height: 150px;
+            }
+            
+            .footer {
+                padding: 2px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>Lebron James</h1>
-    </div>
-    <div class="content">
-        <h2>Early Life and Career</h2>
-        <p>Lebron James was born on December 30, 1984, in Akron, Ohio. He grew up in a single-parent household and was raised by his mother, Gloria James.</p>
-        <p>Lebron attended St. Vincent-St. Mary High School in Akron, where he played basketball and was considered one of the top high school players in the country.</p>
-        <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lebron_James_2018.jpg/1200px-Lebron_James_2018.jpg" alt="Lebron James">
-        <h2>Professional Career</h2>
-        <p>Lebron was drafted first overall by the Cleveland Cavaliers in the 2003 NBA draft. He quickly became one of the top players in the league, leading the Cavaliers to the NBA Finals in 2007.</p>
-        <p>Lebron won his first NBA championship with the Miami Heat in 2012 and went on to win two more championships with the Heat in 2013 and 2014.</p>
-        <p>Lebron returned to the Cavaliers in 2014 and led the team to their first NBA championship in 2016.</p>
-    </div>
-    <div class="footer">
+    </header>
+    <main class="content">
+        <section>
+            <h2>Early Life and Career</h2>
+            <p>Lebron James was born on December 30, 1984, in Akron, Ohio. He grew up in a single-parent household and was raised by his mother, Gloria James.</p>
+            <p>Lebron attended St. Vincent-St. Mary High School in Akron, where he played basketball and was considered one of the top high school players in the country.</p>
+            <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lebron_James_2018.jpg/1200px-Lebron_James_2018.jpg" alt="Lebron James">
+            <h2>Professional Career</h2>
+            <p>Lebron was drafted first overall by the Cleveland Cavaliers in the 2003 NBA draft. He quickly became one of the top players in the league, leading the Cavaliers to the NBA Finals in 2007.</p>
+            <p>Lebron won his first NBA championship with the Miami Heat in 2012 and went on to win two more championships with the Heat in 2013 and 2014.</p>
+            <p>Lebron returned to the Cavaliers in 2014 and led the team to their first NBA championship in 2016.</p>
+        </section>
+    </main>
+    <footer class="footer">
         <p>&copy; 2023 Lebron James Website</p>
-    </div>
-<div style="position: fixed; bottom: 16px; right: 16px; z-index: 999999; font-family: sans-serif; font-size: 11px; font-weight: 600; color: #ededed; background-color: rgba(18, 18, 18, 0.95); border: 1px solid #262626; padding: 10px 14px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 4px;"><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; background: #22c55e; border-radius: 50%;"></span><a href="https://textnexus.me" target="_blank" style="color: #ededed; text-decoration: none;">Powered by Nexus • textnexus.me</a></div><div style="font-size: 10px; color: #a1a1aa;">Expires in 7 days. To keep active, email <a href="mailto:nexus.web.solutions@putlook.com" style="color: #60a5fa;">nexus.web.solutions@putlook.com</a></div></div></body>
+    </footer>
+    <div style="position: fixed; bottom: 16px; right: 16px; z-index: 999999; font-family: sans-serif; font-size: 11px; font-weight: 600; color: #ededed; background-color: rgba(18, 18, 18, 0.95); border: 1px solid #262626; padding: 10px 14px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 4px;"><div style="display: flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; background: #22c55e; border-radius: 50%;"></span><a href="https://textnexus.me" target="_blank" style="color: #ededed; text-decoration: none;">Powered by Nexus • textnexus.me</a></div><div style="font-size: 10px; color: #a1a1aa;">Expires in 7 days. To keep active, email <a href="mailto:nexus.web.solutions@putlook.com" style="color: #60a5fa;">nexus.web.solutions@putlook.com</a></div></div>
+</body>
 </html>
